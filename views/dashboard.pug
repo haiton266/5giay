@@ -1,0 +1,149 @@
+doctype html
+head
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet")
+  //link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+  link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+  link(rel="shortcut icon" href="/ico/eco.png" type="image/x-icon")
+  style.
+    body{
+    background-color: #ffe6cc;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    }
+    .toggle {
+      background-color: #e67700;
+      text-align: center;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      position: absolute;
+      margin: auto;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+    }
+    .fa-plus{
+    font-size: 60px;
+    color: white;
+    display: block;
+    margin-top: 20px;
+    transition: 0.7s;
+    }
+    .menu {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    transform: scale(0);
+    border-radius: 50%;
+    border-style: double;
+    border-color:#e67700;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    transition: 0.7s;
+    }
+    a {
+    display: inline-block;
+    position: absolute;
+    font-size: 15px;
+    color: #BBBBBB;
+    }
+    a:nth-child(1){
+    top: 6px;
+    left: 45px;
+    }
+    a:nth-child(2){
+    top: 24px;
+    left: 77px;
+    }
+    a:nth-child(3){
+    top: 58px;
+    left: 76px;
+    }
+    a:nth-child(4){
+    top: 78px;
+    left: 42px;
+    }
+    a:nth-child(5){
+    top: 58px;
+    left: 10px;
+    }
+    a:nth-child(6){
+    top: 23px;
+    left: 12px;
+    }
+    a:hover {
+    color: #c87f8a;
+    }
+    .swal-title {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .swal-text {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #FEFAE3;
+      padding: 17px;
+      border: 1px solid #F0E1A1;
+      display: block;
+      margin: 22px;
+      text-align: center;
+      color: #61534e;
+    }
+#toggle.toggle(onclick='menu-expand()')
+  i#plus.fa.fa-plus
+#menu.menu
+  //log out
+  a(href='/user/logout') 
+    i.fa.fa-power-off
+  //profile
+  a(href='/user/manage/profile')
+    i.fa.fa-user
+  //manage
+  a(href='/user/manage')
+    i.fa.fa-folder-open
+  // About Dev
+  a(href='#')
+    i.fa.fa-users
+  // Contact Dev
+  a(href='#')
+    i.fa.fa-phone
+  //Intruction
+  a(href='#')
+    i.fa.fa-question
+script.
+  var i=0;
+  function expand(){
+  if(i==0){
+  document.getElementById("menu").style.transform="scale(3)";
+  document.getElementById("plus").style.transform="rotate(45deg)";
+  i=1;
+  }
+  else{   document.getElementById("menu").style.transform="scale(0)";
+  document.getElementById("plus").style.transform="rotate(0deg)";
+  i=0;
+  }
+  }
+script(src="https://unpkg.com/sweetalert/dist/sweetalert.min.js")
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+script.
+  swal({
+    title: 'Welcome !',
+    text: 'Nếu là lần đầu tiên vào đây, vui lòng xem FAQs (dấu chấm hỏi) để biết cách sử dụng trang web .Rê chuột vào từng biểu tượng để biết chức năng ',
+    icon: 'info',
+    button: 'Chấp thuận',
+  });
+  $(document).ready(function() {
+    $('[data-toggle="popover"]').popover({
+        placement: 'top',
+        trigger: 'hover'
+    });
+  });
+

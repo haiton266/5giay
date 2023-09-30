@@ -1,0 +1,40 @@
+{
+  "name": "schoolmarket",
+  "version": "1.0.0",
+  "description": "INSTALL REDIS \r Windows : https://github.com/dmajkic/redis/downloads\r Ubuntu : sudo apt install redis-server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --inspect index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "clear": "^0.1.0",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "md5": "^2.2.1",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.6.1",
+    "nodemon": "^1.19.1",
+    "pug": "^3.0.1",
+    "redis": "^3.1.1",
+    "redis-server": "^1.2.2",
+    "shortid": "^2.2.14",
+    "socket.io": "^2.4.0",
+    "socket.io-emitter": "^3.1.1",
+    "socket.io-redis": "^5.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buiqhung127/schoolMarket.git"
+  },
+  "bugs": {
+    "url": "https://github.com/buiqhung127/schoolMarket/issues"
+  },
+  "homepage": "https://github.com/buiqhung127/schoolMarket#readme"
+}
