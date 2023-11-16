@@ -5,7 +5,7 @@ html
     meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     // metatextblock
-    title Danh sách người dùng - School market
+    title Danh sách người dùng - Comestic
     // /metatextblock
     link(rel="shortcut icon" href="/ico/eco.png" type="image/x-icon")
     // Assets
@@ -117,7 +117,7 @@ html
             .t228__padding40px
             .t228__leftside
               .t228__leftcontainer
-                a.t228__logo.t-title(href = '/' field="title" style="color:#ffffff;font-size:30px;font-weight:600;font-family:'Montserrat';") School Market
+                a.t228__logo.t-title(href = '/' field="title" style="color:#ffffff;font-size:30px;font-weight:600;font-family:'Montserrat';") Comestic
             .t228__centerside
               .t228__centercontainer
                 ul.t228__list.t228__list_hidden  
@@ -443,7 +443,7 @@ html
              .t013__autor-descr.t-descr.t-animate(data-animate-style="fadeinright" data-animate-group="yes" data-animate-order="4" data-animate-delay="0.3" style="" field="imgdescr") #{element.info.id}
             .t-col.t-col_7
              .t013__text.t-text.t-text_md.t-animate(data-animate-style="fadein" data-animate-group="yes" data-animate-order="1" style="" field="text")
-              | Lớp : #{element.info.clas}
+              | Tuổi : #{element.info.clas}
               br
               | Email : #{element.info.email}
               br
@@ -510,6 +510,7 @@ html
         $('#searchForm').on("keyup",function(){
           let search = $(this).val().toLowerCase() ; 
            $("#users").children('#mark').filter(function() {
+              console.log("search",search);
               $(this).toggle($(this).text().toLowerCase().indexOf(search) > -1) ; 
         });
       }) ; 

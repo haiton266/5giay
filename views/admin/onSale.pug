@@ -5,7 +5,7 @@ html
     meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     // metatextblock
-    title Đang bán - School market
+    title Đang bán - Comestic
     // /metatextblock
     meta(property="fb:app_id" content="257953674358265")
     meta(name="format-detection" content="telephone=no")
@@ -122,7 +122,7 @@ html
             .t228__padding40px
             .t228__leftside
               .t228__leftcontainer
-                a.t228__logo.t-title(href = '/' field="title" style="color:#ffffff;font-size:30px;font-weight:600;font-family:'Montserrat';") School Market
+                a.t228__logo.t-title(href = '/' field="title" style="color:#ffffff;font-size:30px;font-weight:600;font-family:'Montserrat';") Comestic
             .t228__centerside
               .t228__centercontainer
                 ul.t228__list.t228__list_hidden  
@@ -558,6 +558,7 @@ html
         $('#searchForm').on("keyup",function(){
           let search = $(this).val().toLowerCase() ; 
            $("#items").children('#mark').filter(function() {
+              console.log("search",search);
               $(this).toggle($(this).text().toLowerCase().indexOf(search) > -1) ; 
         });
       }) ; 

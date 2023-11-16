@@ -7,7 +7,7 @@ html
     |     
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     // metatextblock
-    title Đăng mua - School market
+    title Đăng mua - Comestic
     link(rel='shortcut icon', href='/ico/eco.png', type='image/x-icon')
     // Assets
     link(rel='stylesheet', href='https://static.tildacdn.com/css/tilda-grid-3.0.min.css', type='text/css', media='all')
@@ -74,9 +74,9 @@ html
         #nav108820109.t199__header.t199__js__header.t199__dark(style='', data-menu='yes')
           .t199__holder
             a.t199__logo(href='/', style='')
-              .t199__logo-text.t-title(field='title', style='') School Market
+              .t199__logo-text.t-title(field='title', style='') Comestic
               |                         
-              .t199__logo-text-mobile.t-title(field='title', style='') School Market
+              .t199__logo-text-mobile.t-title(field='title', style='') Comestic
             |                     
             a.t199__mmenu-toggler.t199__js__menu-toggler(href='#')
               span.t199__mmenu-toggler-in
@@ -85,13 +85,13 @@ html
               nav.t199__menu
                 a.t199__menu-item.t-title.t-menu__link-item(href='/rent/all') TẤT CẢ
                 |  
-                a.t199__menu-item.t-title.t-menu__link-item(href='/rent/food') THỰC PHẨM
+                a.t199__menu-item.t-title.t-menu__link-item(href='/rent/food') Nước hoa
                 |  
-                a.t199__menu-item.t-title.t-menu__link-item(href='/rent/deco') TRANG TRÍ
+                a.t199__menu-item.t-title.t-menu__link-item(href='/rent/deco') Sữa rửa mặt
                 |  
-                a.t199__menu-item.t-title.t-menu__link-item(href='/rent/fashion') THỜI TRANG
+                a.t199__menu-item.t-title.t-menu__link-item(href='/rent/fashion') Son môi
                 |  
-                a.t199__menu-item.t-title.t-menu__link-item(href='/rent/digital') THIẾT BỊ ĐIỆN TỬ
+                a.t199__menu-item.t-title.t-menu__link-item(href='/rent/digital') Dưỡng ẩm
                 |  
                 a.t199__menu-item.t-title.t-menu__link-item(href='/rent/others') KHÁC
         |       
@@ -205,7 +205,7 @@ html
                     span(style="font-weight: 600;")
                       | Đăng mua
                       br
-                //.t-section__descr.t-descr.t-descr_xl.t-animate(data-animate-style="fadeinup" data-animate-group="yes" field="bdescr") School market
+                //.t-section__descr.t-descr.t-descr_xl.t-animate(data-animate-style="fadeinup" data-animate-group="yes" field="bdescr") Comestic
           .t-container
             .t-col.t-col_8.t-prefix_2
               .t-animate(data-animate-style="fadeindown" data-animate-group="yes" data-animate-order="1")
@@ -228,21 +228,21 @@ html
                       .t-input-block
                         .t-radio__wrapper
                           label.t-radio__control.t-text.t-text_xs(style="")
-                            input.t-radio.js-tilda-rule(type="radio" name="type" value="THỰC PHẨM" data-tilda-req="1")
+                            input.t-radio.js-tilda-rule(type="radio" name="type" value="Nước hoa" data-tilda-req="1")
                             .t-radio__indicator
-                            | Thực phẩm
+                            | Nước hoa
                           label.t-radio__control.t-text.t-text_xs(style="")
-                            input.t-radio.js-tilda-rule(type="radio" name="type" value="TRANG TRÍ" data-tilda-req="1")
+                            input.t-radio.js-tilda-rule(type="radio" name="type" value="Sữa rửa mặt" data-tilda-req="1")
                             .t-radio__indicator
-                            | Đồ trang trí
+                            | Đồ Sữa rửa mặt
                           label.t-radio__control.t-text.t-text_xs(style="")
-                            input.t-radio.js-tilda-rule(type="radio" name="type" value="THỜI TRANG" data-tilda-req="1")
+                            input.t-radio.js-tilda-rule(type="radio" name="type" value="Son môi" data-tilda-req="1")
                             .t-radio__indicator
-                            | Thời trang
+                            | Son môi
                           label.t-radio__control.t-text.t-text_xs(style="")
-                            input.t-radio.js-tilda-rule(type="radio" name="type" value="THIẾT BỊ ĐIỆN TỬ" data-tilda-req="1")
+                            input.t-radio.js-tilda-rule(type="radio" name="type" value="Dưỡng ẩm" data-tilda-req="1")
                             .t-radio__indicator
-                            | Thiết bị điện tử
+                            | Dưỡng ẩm
                           label.t-radio__control.t-text.t-text_xs(style="")
                             input.t-radio.js-tilda-rule(type="radio" name="type" value="KHÁC" data-tilda-req="1")
                             .t-radio__indicator
@@ -528,6 +528,7 @@ html
         $('#searchForm').on("keyup",function(){
           let search = $(this).val().toLowerCase() ; 
            $("#items").children('#mark').filter(function() {
+              console.log("search",search);
               $(this).toggle($(this).text().toLowerCase().indexOf(search) > -1) ; 
         });
       }) ; 

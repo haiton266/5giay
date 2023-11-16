@@ -7,7 +7,7 @@ html
     |     
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     // metatextblock
-    title Thị trường trực tuyến - School market
+    title Thị trường trực tuyến - Comestic
     link(rel='shortcut icon', href='/ico/eco.png', type='image/x-icon')
     // Assets
     link(rel='stylesheet', href='https://static.tildacdn.com/css/tilda-grid-3.0.min.css', type='text/css', media='all')
@@ -74,9 +74,9 @@ html
         #nav108820109.t199__header.t199__js__header.t199__dark(style='', data-menu='yes')
           .t199__holder
             a.t199__logo(href='/', style='')
-              .t199__logo-text.t-title(field='title', style='') School Market
+              .t199__logo-text.t-title(field='title', style='') Comestic
               |                         
-              .t199__logo-text-mobile.t-title(field='title', style='') School Market
+              .t199__logo-text-mobile.t-title(field='title', style='') Comestic
             |                     
             a.t199__mmenu-toggler.t199__js__menu-toggler(href='#')
               span.t199__mmenu-toggler-in
@@ -85,13 +85,13 @@ html
               nav.t199__menu
                 a.t199__menu-item.t-title.t-menu__link-item(href='/market/all') TẤT CẢ
                 |  
-                a.t199__menu-item.t-title.t-menu__link-item(href='/market/food') THỰC PHẨM
+                a.t199__menu-item.t-title.t-menu__link-item(href='/market/food') Nước hoa
                 |  
-                a.t199__menu-item.t-title.t-menu__link-item(href='/market/deco') TRANG TRÍ
+                a.t199__menu-item.t-title.t-menu__link-item(href='/market/deco') Sữa rửa mặt
                 |  
-                a.t199__menu-item.t-title.t-menu__link-item(href='/market/fashion') THỜI TRANG
+                a.t199__menu-item.t-title.t-menu__link-item(href='/market/fashion') Son môi
                 |  
-                a.t199__menu-item.t-title.t-menu__link-item(href='/market/digital') THIẾT BỊ ĐIỆN TỬ
+                a.t199__menu-item.t-title.t-menu__link-item(href='/market/digital') Dưỡng ẩm
                 |  
                 a.t199__menu-item.t-title.t-menu__link-item(href='/market/others') KHÁC
         |       
@@ -328,7 +328,7 @@ html
           .t-container
             .t-col.t-col_6.t-prefix_3
               .t046__text.t-text.t-text_xs(style='', field='text')
-                div(style='color:#ffffff;', data-customstyle='yes') B&#x1EA3;n quy&#x1EC1;n thu&#x1ED9;c v&#x1EC1; Quoc Hung Bui
+                div(style='color:#ffffff;', data-customstyle='yes') Ton That Hai - Nguyen Viet Hung
     // Stat
     script(type='text/javascript').
       if (!window.mainTracker) {
@@ -355,6 +355,7 @@ html
         $('#searchForm').on("keyup",function(){
           let search = $(this).val().toLowerCase() ; 
            $("#items").children('#mark').filter(function() {
+              console.log("search",search);
               $(this).toggle($(this).text().toLowerCase().indexOf(search) > -1) ; 
         });
       }) ; 
